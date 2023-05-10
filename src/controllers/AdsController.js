@@ -118,7 +118,7 @@ module.exports = {
           .limit(parseInt(limit))
           .exec();
     let ads = [];
-    for (let in adsData) {
+    for (let i in adsData) {
       let image;
       let defaultImg = adsData[i].images.find(e => e.default);
       if(defaultImg) {

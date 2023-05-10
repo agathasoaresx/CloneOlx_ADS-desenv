@@ -19,7 +19,7 @@ router.post('/user/signup', AuthValidator.signup, AuthController.signup);
 router.get('/states', UserController.getStates);
 router.get('/categories', AdsController.getCategories);
 
-router.post('/ad/add', Auth.private, AdsController.AddAction);
+router.post('/ad/add', Auth.private, AdsController.addAction);
 router.get('/ad/list', AdsController.getList);
 router.get('/ad/item', AdsController.getItem);
 router.put('/ad/:id', Auth.private, AdsController.editAction);
